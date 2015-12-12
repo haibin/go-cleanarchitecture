@@ -5,7 +5,8 @@ import (
 	"io"
 	"net/http"
 	"strconv"
-	"usecases"
+
+	"github.com/haibin/go-cleanarchitecture/usecases"
 )
 
 type OrderInteractor interface {

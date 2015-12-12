@@ -1,9 +1,10 @@
 package interfaces
 
 import (
-	"domain"
 	"fmt"
-	"usecases"
+
+	"github.com/haibin/go-cleanarchitecture/domain"
+	"github.com/haibin/go-cleanarchitecture/usecases"
 )
 
 type DbHandler interface {

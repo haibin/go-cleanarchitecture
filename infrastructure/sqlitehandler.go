@@ -3,8 +3,10 @@ package infrastructure
 import (
 	"database/sql"
 	"fmt"
+
 	_ "github.com/mattn/go-sqlite3"
-	"interfaces"
+
+	"github.com/haibin/go-cleanarchitecture/interfaces"
 )
 
 type SqliteHandler struct {

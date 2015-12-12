@@ -1,16 +1,17 @@
 package main
 
 import (
-	"usecases"
-	"interfaces"
-	"infrastructure"
 	"net/http"
+
+	"github.com/haibin/go-cleanarchitecture/infrastructure"
+	"github.com/haibin/go-cleanarchitecture/interfaces"
+	"github.com/haibin/go-cleanarchitecture/usecases"
 )
 
 func main() {
 	dbHandler := infrastructure.NewSqliteHandler("/var/tmp/production.sqlite")
 
-	handlers := make(map[string] interfaces.DbHandler)
+	handlers := make(map[string]interfaces.DbHandler)
 	handlers["DbUserRepo"] = dbHandler
 	handlers["DbCustomerRepo"] = dbHandler
 	handlers["DbItemRepo"] = dbHandler

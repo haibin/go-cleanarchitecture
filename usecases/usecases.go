@@ -1,8 +1,9 @@
 package usecases
 
 import (
-	"domain"
 	"fmt"
+
+	"github.com/haibin/go-cleanarchitecture/domain"
 )
 
 type UserRepository interface {
